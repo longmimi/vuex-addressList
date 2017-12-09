@@ -24,4 +24,9 @@
   * 建立github仓库，并clone到本地
   * 添加项目代码，push到远程master分支
   * 建立gh-pages分支并切换，将打包出来的`静态资源文件`：`dist`下的文件push到`gh-pages`分支
-  * 在 http://longtean.top/vuex-addressList/index.html 查看效果
+  * 在 http://longtean.top/vuex-addressList/index.html 查看效果
+  
+* 注意
+
+  * 在 `npm run build` 之前要将 `config/index.js` 里边 build 配置里边的 `assetsPublicPath: '/'` 改成 `assetsPublicPath: './'`
+  * 将 `webpack.prod.conf.js` 中的 `removeAttributeQuotes` 改为 `false`
